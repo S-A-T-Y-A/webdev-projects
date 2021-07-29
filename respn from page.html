@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: rgb(123 141 230 / 68%);
+        }
+
+
+
+        .con {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(158, 196, 196);
+            width: 400px;
+            height: 50%;
+            border: 0.2px solid black;
+            padding: 20px;
+            margin: auto;
+            margin-top: 100px;
+          
+            border-radius: 10px;
+            box-shadow: 10px 10px 20px rgb(0, 0, 0);
+        }
+
+
+        input {
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            margin-bottom: 40px;
+            opacity: 100px;
+            background-color: #ffff;
+            text-align: center;
+            letter-spacing: 1px;
+            font-variant: small-caps;
+            font-weight: bolder;
+            font-size: 15px;
+            color: black;
+            background-color: black;
+
+        }
+
+        .acnts {
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 20px;
+        }
+
+        .fa {
+            background-color: white;
+            font-size: 30px;
+            padding: 15px;
+            border-radius: 10px;
+        }
+
+        .fa:hover {
+            box-shadow: 5px 5px 8px rgb(38, 51, 38);
+        }
+
+        input:nth-child(1){
+            margin-top: 40px;
+        }
+
+        input:nth-child(2) {
+            margin-bottom: 20px;
+        }
+
+        input:hover {
+
+            box-shadow: 5px 5px 8px rgb(38, 51, 38);
+        }
+
+        h6 {
+            border-radius: 10px;
+            position: relative;
+            top: 60px;
+            right: 63px;
+            background-color: rgb(41, 39, 39);
+            color: white;
+            height: 15px;
+            padding: 10px;
+            display: none;
+        }
+        #google{
+            color: green;
+        }
+        #mail{
+            color: red;
+        }
+        #utube{
+            color: red;
+        }
+        #google:hover #google1{
+            display: block;
+        }
+      
+    </style>
+</head>
+
+<body>
+    <div class="con">
+        <input type="text" placeholder="enter name" />
+        <input type="text" placeholder="enter ur age" />
+        <div class="acnts">
+            <i class="fa fa-google-plus-square" id="google" aria-hidden="true"></i>
+            <h6 id="google1">google</h6>
+            <i class="fa fa-envelope" id="mail" aria-hidden="true"></i>
+            <h6 id="mail1">Mail</h6>
+            <i class="fa fa-youtube-play" id="utube" aria-hidden="true"></i>
+            <h6 id="utube1">Youtube</h6>
+
+        </div>
+
+        <input type="text" placeholder="enter number" />
+        <input type="text" placeholder="enter ur email" />
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>something try</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .card{
+            background-color: rgb(0, 0, 0);
+           width: 80vw;
+           min-height: 6vh;
+           margin:  10px auto;
+           padding: 10px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           border-radius: 10px;
+           position: fixed;
+           top: 10%;
+           left: 8%;
+        }
+        ul{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        li{
+            list-style: none;
+            padding: 8px 15px;
+            margin: 10px;
+            z-index: 1;
+            position: relative;
+            
+        }
+        li::before{
+            content: " ";
+            background:linear-gradient(to left,rgb(255, 0, 119),rgb(0, 124, 128));
+            width: 4px ;
+            height: 60%;
+            position: absolute;
+            right: 100%;
+            transition: height 0.3s ease;
+
+        }
+        li:hover::before{
+            content: " ";
+            background:linear-gradient(to left,rgb(255, 0, 119),rgb(0, 124, 128));
+            width: 90% ;
+            height: 4px;
+            position: absolute;
+            bottom: -0.6px;
+            left: 0%;
+            transition: width 0.8s ease;
+        }
+        /* li::after{
+            content: " ";
+            background:linear-gradient(to left,rgb(255, 0, 119),rgb(0, 124, 128));
+            width: 4px ;
+            height: 80%;
+            position: absolute;
+            left: 100%;
+            transition: height 1s ease;
+
+        }
+        li:hover::after{
+            content: " ";
+            background:linear-gradient(to left,rgb(255, 0, 119),rgb(0, 124, 128));
+            width: 90% ;
+            height: 4px;
+            position: absolute;
+            top: -0.6px;
+            left: 0%;
+            transition: width 1s ease;
+        } */
+        
+        a{
+            color: white;
+            text-decoration: none;
+            font-weight: bolder;
+            letter-spacing: 2px;
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div class="card">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+            <li><a href="#">profile</a></li>
+            <li><a href="#">projects</a></li>
+        </ul>
+    </div>
+</body>
+</html>

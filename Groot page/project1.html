@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>groot page</title>
+    <link rel="stylesheet" href="project.css">
+ 
+</head>
+<body>
+    <header>
+        <div class="left-nav">
+            <h1>GROOT</h1>
+        </div>
+        <div class="navbar">
+            <ul class="nav-elements">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Groot</a></li>
+                <li><a href="#">Contacts Groot</a></li>
+            </ul>
+        </div>
+        <div class="right-nav">
+            <input type="button" value="login">
+            <input type="button" value="signup">
+        </div>
+    </header>
+    <div class="form-main">
+       <h4>Be a friend of <span>GROOT</span> </h4>
+        <form action="groot.php">
+           <input type="text" class="inputs" placeholder="Enter your name">
+           <input type="email" class="inputs" placeholder="enter your email">
+           <input type="number" class="inputs" placeholder="age">
+           <div class="gender">
+            <label for="gender">
+                <h6>GENDER :</h6>
+                <select name="gender" >
+                    <option value="male">male</option>
+                    <option value="female" selected>female</option>
+                    <option value="others" selected>others</option>
+                </select>
+            </label>
+        </div>
+        <input type="text" placeholder="city">
+       
+           <div class="buttons">
+               <input id="reset" type="reset" value="Reset">
+               <input   id="submit" type="submit" value="Submit">
+           </div>
+        </form>
+    </div>
+    <footer>
+        <ul class="footer">
+            <li class="footer-ele"><a href="https://www.facebook.com/"><img id="fblogo" src="https://png.pngtree.com/png-clipart/20200721/original/pngtree-facebook-blue--logo-free-png-png-image_4835224.jpg" alt="facebook"></a> </li>
+            <li class="footer-ele"><a href="https://www.instagram.com/"> <img src="https://i.pinimg.com/originals/0f/1e/cd/0f1ecd724117e27390873d3e42b24571.jpg" alt="instagram"></a> </li>
+        </ul>
+    </footer>
+
+</body>
+</html>

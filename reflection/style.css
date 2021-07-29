@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  /* background-color: cornsilk; */
+  display: flex;
+}
+.con {
+  width: 0px;
+  height: 300px;
+  background: linear-gradient(to right, rgb(228, 94, 94), rgb(65, 65, 206));
+  position: absolute;
+  top: 100px;
+  left: 250px;
+  border-radius: 10px;
+  box-shadow: 0px 30px 50px rgba(0, 0, 0, 0.568),0px 5px 10px rgba(0,0,0,0.4);
+  
+}
+.conactive{
+    width: 500px;
+    z-index: 5000;
+}
+#con-2{
+    width: 500px;
+    height: 300px;
+    background: linear-gradient(to right, rgb(228, 94, 94), rgb(65, 65, 206));
+    position: absolute;
+    top: 100px;
+    left: 250px;
+    border-radius: 10px;
+    /* box-shadow: 0px  30px 50px rgba(0, 0, 0, 0.3),0px 5px 10px rgba(0,0,0,0.3); */
+    display: block;
+    
+}
+.con:hover:before{
+    content: "";
+    position: absolute;
+    background: inherit;
+    height: 60%;
+    width: inherit;
+    bottom: -63%;
+    border-radius: inherit;
+    /* transform: translateY(-110%);
+    transition: transform 1s ease-in-out; */
+   
+    /* transform: scaleY(-1);
+    background-position: bottom;
+    background-size: cover;
+    */
+}
+.con:hover:after{
+    content: "";
+    position: absolute;
+    background: linear-gradient(to bottom,rgba(255, 255, 255, 0.301),white);
+    height: 60%;
+    width: inherit;
+    bottom: -63%;
+    border-radius: 10px 10px 10px 10px;
+   
+    
+    
+
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(129, 125, 125);
+    width: 50px;
+    height: 50px;
+    border-radius: 25%;
+    position: fixed;
+    top: 100px;
+    left: 800px;
+    cursor: pointer;
+}
+
+.color{
+    background: tomato;
+}
+h2{
+    background-color:rgb(255, 154, 136);
+    padding: 10px;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}

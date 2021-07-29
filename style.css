@@ -1,0 +1,128 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: grey;
+}
+.whitebox {
+  background-color: rgb(74, 108, 196);
+  width: fit-content;
+  height: fit-content;
+  border-radius: 50%;
+  margin: 0px auto;
+  position: relative;
+  bottom: 60px;
+}
+.whitebox img {
+  border: 10px solid black;
+  width: 112px;
+  border-radius: 50%;
+}
+
+.black-bg {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+}
+.main-con {
+  background-color: white !important;
+  border: 1px solid rgb(167, 165, 165);
+  width: 70%;
+  margin: auto;
+  border-radius: 15px;
+  box-shadow: 10px 10px 10px black;
+}
+
+.left-con {
+  float: right;
+  position: relative;
+  bottom: 90px;
+  right: 20px;
+  padding: 1em;
+  margin-bottom: -74px;
+}
+
+.left-con button {
+  background-color: dodgerblue;
+  border-radius: 5px;
+  padding-left: 5px;
+    box-shadow: 5px 5px 5px rgb(19, 35, 46);
+}
+.left-con button span {
+  font-size: 13px;
+  padding: 3px;
+  font-weight: 600;
+}
+.name{
+    text-align: center;
+    /* border: 2px solid black; */
+    /* padding-left: 100px; */
+    position: relative;
+    bottom: 10px ;
+}
+.para{
+    /* margin-left: 125px; */
+    text-align: center;
+    font-size: small;
+    /* background-color: cadetblue; */
+}
+.followers{
+  color: rgb(15, 110, 117);
+  justify-content:space-evenly ;
+  padding: 10px;
+  flex-wrap: wrap;
+
+}
+.followers .fa{
+   margin-top: 8px;
+}
+.followers span{
+  color: black;
+    padding-left: 10px;
+    font-size: small;
+}
+.con-2{
+    text-align: center;
+    border-top: 1px solid rgb(211, 208, 208);
+    padding-top: 20px;
+    font-size: small;
+}
+.center-text{
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width:700px) {
+    .main-con{
+        width: 100%;
+    }
+    .whitebox{
+           margin-left: 20px;
+    bottom: 30px;
+}
+    .left-con{
+        bottom: 60px;
+    }
+
+    .whitebox img{
+        width: 55px;
+        /* border: 5px solid black;
+    }
+    .name h1{
+        text-align: left;
+        font-size: 20px;
+    }
+    .followers{
+
+        justify-content: left;
+    }
+   .followers i{
+       padding-bottom: 8px;
+   }
+   .para{
+    margin-left: 0px;
+
+   } */
+    
+}}

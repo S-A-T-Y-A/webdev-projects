@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        *{padding: 0px;
+        margin: 0px;
+        }
+        
+        .nav-bar{
+            color: white;
+            background-color: blueviolet;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .ul{
+           display: flex;
+           flex-wrap: wrap;
+        }
+        .li{
+           list-style: none;
+           margin-left: 10px;
+           padding: 10px;
+           border-radius: 10px;
+             letter-spacing: 3px;
+             font-variant: small-caps;
+             font-weight: bolder;
+           
+        }
+        .li:hover{
+            background-color: darkorchid;
+            
+        }
+        .fa{
+            display: none;
+        }
+     
+        @media(max-width:500px){
+            .fa{
+                display: block;
+            
+            }
+            .fa:hover{
+                color:rgb(113, 230, 165);
+                cursor: pointer;
+            }
+            .ul{
+                margin-top: 30px;
+                margin-left: 45px;
+                margin-bottom: 20px;
+                width: 100%;
+                /* border: 2px solid black; */
+            }
+            .li{
+                margin-top: 20px;
+                display: block;
+                width: 100%;
+                text-align: center;
+              
+
+            }
+             #responsive{
+            display: none;
+        }
+
+           }
+        
+    </style>
+</head>
+<body>
+    <div class="nav-bar"  >
+        <div class="nav-ele" >
+            <ul class="ul" id="responsive">
+                <li class="li">HOME</li>
+                <li class="li">IMAGES</li>
+                <li class="li">VEDIOS</li>
+                <li class="li">ABOUT</li>
+            </ul>
+
+        </div>
+        <i class="fa fa-bars"onclick="menu()" ></i>
+    </div>
+
+
+
+
+
+
+
+
+
+
+  <script>
+        var show=false;//created a boolean variable
+        function menu(){
+            if(!show)//opposite to variable
+            {
+                show=true;//if show is true that is opposite to declared then .
+                document.getElementById("responsive").style.display='block';
+            }
+            else{
+                show=false;
+                document.getElementById("responsive").style.display='none';
+            }
+        }
+        // alert("satya nandan resposive menubar")
+    </script>
+</body>
+</html>
