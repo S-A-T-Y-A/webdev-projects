@@ -1,0 +1,366 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.menutop{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1em 0;
+}
+.rightmenu{
+    flex-basis: 250px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}    
+.rightmenu a{
+    text-decoration: none;
+    color: black;
+    font-size: smaller;
+   
+
+    
+
+}
+.rightmenu a:hover{
+    text-decoration: underline black;
+    transition: text-decoration 0.5s ease-in-out;
+}
+.rightmenu i{
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    margin-top: 5px;
+    color: rgb(34, 33, 33);
+    border-radius: 50%;
+    padding: 9px;
+    transition: background-color  0.2s ease-in-out;
+    cursor: pointer;
+}
+.rightmenu i:hover{
+    background-color: rgb(196, 193, 193);
+    
+}
+.rightmenu img{
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 30px;
+    box-sizing: content-box;
+    cursor: pointer;
+}
+.rightmenu img:hover{
+    border: 2px solid rgb(196, 193, 193);
+    transition: border  0.2s ease-in-out;
+}
+
+.googleapps-con{
+    display: none;
+    margin-top: 1em;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    position: absolute;
+    right: 2em;
+    width: 300px;
+    height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 8px grey;
+    padding: 10px 0px;
+    display: none;
+    flex-direction: column;
+
+    transition: all 2s ease-in-out;
+    display: flex;
+    animation: apps 0.5s ease-out ;
+    transform-origin: 100% top;
+   
+}
+@keyframes apps{
+    from{
+       transform: scale(0);
+    }
+    to{
+       transform: scale(1);
+    }
+}
+.googleapps-con::-webkit-scrollbar{
+    width: 5px;
+    
+}
+/* .googleapps-con::-webkit-scrollbar-track{
+    background-color: blue;
+    
+} */
+.googleapps-con::-webkit-scrollbar-thumb{
+    border-radius: 5px;
+    background-color: rgb(137, 137, 177);
+}
+
+
+.googleapps-con .row{
+    box-sizing: content-box;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 0px;
+    width: 100%;
+    margin: 5px 2px;
+    color: rgb(80, 79, 79);
+    /* background-color: red; */
+    
+}
+.apps {
+    padding: 0.8em;
+    border-radius: 10px;
+    min-height: 80px;
+    min-width: 70px;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+.apps:hover{
+    background-color: rgb(240, 238, 238);
+    
+}
+.googleapps-con .apps img{
+    position: absolute;
+    width: 45px;
+    border-radius: 50%;
+}
+.googleapps-con .row h5{
+    letter-spacing: 1px;
+    font-size: 11.5px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 3px;
+    width: 100%;
+}
+.row-1 img:first-child{
+    margin-top: 3px;
+    width: 35px;
+    height: 40px;
+    
+}
+.googleapps-con button{
+    width: fit-content;
+    position: relative;
+    top: 10px;
+   left: 25%;
+   padding: 8px 20px;
+   font-size: 14px;
+   margin-bottom: 10px;
+   color: royalblue;
+   background-color: white;
+   outline: none;
+   border: 1px solid gray;
+   cursor: pointer;
+   transition: all 0.2s ease;
+}
+.googleapps-con button:hover{
+    border: 1px solid white;
+    background-color: rgb(226, 226, 226);
+    
+}
+.account{
+    background-color: white;
+    display: none;
+    margin-top: 1em;
+    border: 1px solid rgb(185, 185, 185);
+    border-radius: 10px;
+    position: absolute;
+    right: 2em;
+    width: 350px;
+    height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: 0px 0px 8px grey;
+    padding: 10px 0px;
+   
+   overflow-y: auto !important;
+    text-align: center;
+    transition: all 2s ease-in-out;
+    display: flex;
+    animation: apps 0.5s ease-out ;
+    transform-origin: 100% top;
+}
+.user-cam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position:relative;
+    
+    width: 100%;
+    
+    
+    padding: 10px;
+    min-height: 90px;
+}
+.user-cam img{
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+}
+.user-cam i{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+    border-radius: 50%;
+    font-size: larger;
+    position: relative;
+    left: 30px;
+    top: 3vh;
+    
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+}
+.user-cam i:hover{
+    
+    box-shadow: 0px 0px   5px rgb(197, 196, 196);
+    color: blue;
+}
+.inner-content{
+    position: absolute;
+    width: 100%;
+    top: 22%;
+}
+.account h3{
+    position: relative;
+    width: 100%;
+    font-weight: 350;
+    width: 100%;
+    /* padding: 2px; */
+   
+}
+.account p{
+    position: relative;
+    /* margin: 1px 0px 8px 0px; */
+    /* padding: 3px; */
+    font-weight: 100;
+}
+.account button{
+    border-radius: 15px;
+    border: 1px solid white;
+    outline: none;
+    margin: 10px 0px;
+    padding: 7px 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+.account button:hover{
+    border: 1px solid rgb(221, 221, 221);
+    background-color: rgb(230, 225, 225);
+}
+.box-1{
+    border-bottom: 0.5px solid rgb(197, 197, 197);
+}
+.add-account{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 20vh;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.add-account i{
+    position: relative;
+    left: 15%;
+    font-size: larger;
+    
+}
+
+.add-account h3{
+    font-size: 17px;
+}
+.bottom-con{
+    border-radius: 0px 0px 10px 10px;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+}
+.bottom-con .sign-out{
+    padding: 10px 0px;
+    border-bottom: 0.5px solid rgb(197, 197, 197);
+    border-top: 0.5px solid rgb(197, 197, 197);
+}
+.bottom-con .sign-out button{
+    border: 1px solid rgb(197, 197, 197);
+    border-radius: 5px;
+    padding: 7px 20px;
+}
+.terms{
+    margin-top: 20px;
+}
+.terms a{
+     font-size: small;
+     text-decoration: none;
+     color: rgb(92, 92, 92);
+}
+.terms  a:hover{
+    color: black;
+}
+
+.account-show{
+    background-color: white;
+    /* z-index: 1; */
+    display: block;
+    transition: all 2s ease-in-out;
+    animation: apps 0.5s ease-out ;
+    transform-origin: 100% top;
+}
+   @media (max-width:500px) {
+       .googleapps-con{
+          width: 250px;
+          height: 350px;
+       }
+       .apps {
+        padding: 1em;
+        
+    }
+       .googleapps-con .apps img{
+        width: 35px;
+    }
+    .googleapps-con .row h5{
+        
+        bottom: 10px;
+    }
+    .account{
+        width: 300px;
+        height: 500px;
+    }
+   
+    .user-cam img{
+        width: 70px;
+    }
+    .user-cam i{
+        font-size: 15px;
+    }
+    .account h3{
+        font-size: 17px;
+    }
+    .account p{
+        font-size: 15px;
+    }
+    .account button{
+        font-size: 13px;
+    }
+    .add-account i{
+        position: relative;
+        left: 15%;
+        font-size: 17px;
+        
+    }
+    .add-account h3{
+        font-size: 15px;
+    }
+   }
+    
