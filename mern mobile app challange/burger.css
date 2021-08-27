@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+@media(max-width:500px){
+    body{
+        height: 540px;
+        width: 100%;
+        z-index: 8;
+    }
+    #a-cross{
+        color: black;
+
+    }
+    #body{
+        background-color: black;
+        z-index: 3;
+        transition-delay:03s ;
+        /* display: none; */
+
+    }
+.burger-bg img{
+    width: 100%;
+    height: 540px;
+    opacity: 0.5;
+    position: absolute;
+    left: 0px;
+}
+.burger-details{
+    /* font-size: 20px; */
+    padding: 50px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 1;
+}
+.about-res{
+    display: flex;
+    margin-top: 40px;
+    /* margin-bottom: 40px; */
+}
+.about-res i{
+    font-size: 25px;
+    padding-left: 10px;
+    margin-right: 5px;
+    flex-basis: 5%;
+}
+.about-res p{
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-basis: 100%;
+}
+span{
+    font-weight: 100;
+}
+.burger-details a{
+    text-decoration: none;
+    color: black;
+}
+.cross{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 20px;
+}
+.cross:hover{
+    color: crimson;
+
+}
+}

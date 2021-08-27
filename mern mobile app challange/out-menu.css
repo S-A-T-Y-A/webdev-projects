@@ -1,0 +1,32 @@
+@media(max-width:500px){
+    .bg-img{
+        opacity: 0.6;
+    }
+    .menu-content{
+        position: absolute;
+        top: 50px;
+        right: 0px;
+        left: 0px;
+    }
+        
+#h2-menu{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 8px;
+    font-size: 18px;
+    color: rgb(24, 23, 23);
+    text-decoration: underline red;
+}
+.menu-content h5{
+    font-size: 15px;
+}
+.list{
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.list:last-child{
+    padding-bottom: 40px;
+}
+
+
+}
