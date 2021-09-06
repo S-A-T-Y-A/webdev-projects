@@ -2,6 +2,7 @@ const burger = document.querySelector(".rightmenu i");
 const appscon = document.querySelector(".googleapps-con");
 const user = document.querySelector(".rightmenu img");
 const usercon = document.querySelector(".account");
+const body=document.querySelector("body");
 appscon.style.display='none';
 usercon.style.display='none';
 burger.addEventListener("click", () => {
@@ -25,3 +26,7 @@ user.addEventListener("click", () => {
     usercon.style.display = "none";
   }
 });
+
+
+
+  
